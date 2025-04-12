@@ -583,10 +583,8 @@ p.hashtag {
   right: 0;
   max-width: 420px;
   margin: 0 auto;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .feature-main.active {
@@ -594,12 +592,7 @@ p.hashtag {
 }
 
 .overlay.preload {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 9998;
-  pointer-events: none;
+  display: none;
 }
 
 .overlay {
