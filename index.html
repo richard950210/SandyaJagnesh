@@ -40,8 +40,8 @@
     <link href="/rsvp_001/slick-theme.css" rel="stylesheet">
 
     <!-- Flipdown -->
-    <link rel="stylesheet" type="text/css" href="/rsvp_001/flipdown.css">
-    <script type="text/javascript" src="/rsvp_001/flipdown.js"></script>
+<link rel="stylesheet" type="text/css" href="flipdown.css">
+<script type="text/javascript" src="flipdown.js"></script>
 
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://www.kahwinnow.com/plugins/sweetalert2/sweetalert2.min.css">
@@ -887,7 +887,7 @@
                     <p>Jagnesh Jaya</p>
                                     </div>
                 <div class="info-details aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-            <p><b class="info-title">Tarikh</b></p>
+            <p><b class="info-title">Date</b></p>
             <p>Friday,
                 29
                 August
@@ -1210,6 +1210,18 @@
     <script src="https://www.kahwinnow.com/card/js/player.min.js?id=1675758787"></script>
     <script src="https://www.kahwinnow.com/card/js/calendar.min.js"></script>
     <script src="https://www.kahwinnow.com/card/js/color.min.js?id=1421444433"></script>
+    
+    <!-- Preloader Script -->
+    <script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.overlay.preload').style.opacity = '0';
+            setTimeout(function() {
+                document.querySelector('.overlay.preload').style.display = 'none';
+            }, 400);
+        }, 1000);
+    });
+    </script>
 
     
     
