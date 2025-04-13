@@ -500,7 +500,7 @@ td.event {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .countdown-box {
@@ -512,15 +512,16 @@ td.event {
 }
 
 .countdown-item {
-  font-size: 8vw;
+  font-size: 38px;
   font-weight: bold;
 }
 
 .countdown-label {
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 10px;
   color: #000000;
 }
+
 
 /*=============== MONEY GIFT ===============*/
 .gift-btn {
