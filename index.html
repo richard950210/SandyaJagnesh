@@ -434,7 +434,7 @@
 <!--WEDDING NOTES-->
 <div class="feature-card" id="bookModal">
     <div class="feature-content">
-        <h2 class="feature-title">Words to the Lovely Weds/h2>
+        <h2 class="feature-title">Words to the Lovely Weds</h2>
         <form action="api/guestbook/create" method="POST" id="guestbook_form">
             <input type="hidden" name="_token" value="XpX7EPWo2flQ88DtKdZRoOD7QYO5GKEiOoQWXLSj">            
             <div class="text-center">
@@ -868,7 +868,7 @@
         <!--=============== MUSIC ===============-->
         <div class="music">
                     <audio controls="" loop="" id="audio" controlslist="nodownload" class="hidden">
-                <source src="/img/song1.mp3" type="audio/mpeg">
+                <source src="/rsvp_001/img/song1.mp3" type="audio/mpeg">
             </audio>
                 <button id="music-btn" class="text-black font-bold py-2 px-4 rounded-full flex">
             <div class="music-player">
@@ -1013,49 +1013,41 @@
        
 
                 <!--=============== GUESTBOOK ===============-->
-    <section class="container section gallery aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-            <div class="wrapper w-full">
-                <h3 class="section-title">Guestbook</h3>
-                <div class="feature-content pt-3">
-                    <div id="wishes">
-                        <div class="guestbook slick-initialized slick-slider slick-dotted">
-                            <div class="slick-list draggable" style="height: 100px;">
-                                <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="guestbook-main slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
-                                        <p class="guestbook-comment">
-                                        Tahniah</p><br>
-                                        <p class="guestbook-name pb-10">
-                                        -Min-</p>
-                                    </div>
-                                        <div class="guestbook-main slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11" style="width: 0px;"><p class="guestbook-comment">
-                                        Congra</p><br>
-                                        <p class="guestbook-name pb-10">
-                                        -Sha-</p>
-                                    </div>
-                                </div>
+                <section class="container section gallery" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="wrapper w-full">
+                      <h3 class="section-title text-center">Guestbook</h3>
+                  
+                      <div class="feature-content pt-3">
+                        <div id="wishes">
+                          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- Guest Comment -->
+                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
+                              <p class="guestbook-comment text-gray-700 italic">"Tahniah!"</p>
+                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Min</p>
                             </div>
-                            <ul class="slick-dots" style="display: block;" role="tablist">
-                                    <li class="slick-active" role="presentation">
-                                        <button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 2" tabindex="0" aria-selected="true">
-                                        1</button>
-                                    </li>
-                                    <li role="presentation">
-                                        <button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 2" tabindex="-1">
-                                            2</button>
-                                    </li>
-                            </ul>
+                  
+                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
+                              <p class="guestbook-comment text-gray-700 italic">"Congra!"</p>
+                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Sha</p>
+                            </div>
+                  
+                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
+                              <p class="guestbook-comment text-gray-700 italic">"Selamat Pengantin Baru!"</p>
+                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Amir</p>
+                            </div>
+                          </div>
                         </div>
+                  
+                        <div class="flex justify-center pt-5 pb-0">
+                          <button class="wish-btn bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full flex items-center gap-2" id="book">
+                            <i class="fas fa-pen-nib"></i>
+                            <span>Leave a Message</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex justify-center pt-5 pb-0">
-                        <button class="wish-btn" id="book">
-                            <i class="fas fa-pen-nib nav__icon"></i>
-                            <span> Message </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-    </section>
-
+                  </section>
+                  
 
     
         <svg version="1.0" class="pl-5 pr-5 w-full divider "><use href="#divider-1"></use></svg>      
