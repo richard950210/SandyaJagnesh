@@ -1054,39 +1054,55 @@ echo "PHP is working";
                 <!--=============== GUESTBOOK ===============-->
                 <section class="container section gallery" data-aos="fade-up" data-aos-duration="1000">
                     <div class="wrapper w-full">
-                      <h3 class="section-title text-center">Guestbook</h3>
-                  
-                      <div class="feature-content pt-3">
-                        <div id="wishes">
-                          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                            <!-- Guest Comment -->
-                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
-                              <p class="guestbook-comment text-gray-700 italic">"Tahniah!"</p>
-                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Min</p>
+                        <h3 class="section-title text-center">Guestbook</h3>
+                
+                        <div class="feature-content pt-3">
+                            <div id="wishes">
+                                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3" id="guestbook-comments">
+                                    <!-- Guest Comments will be loaded here -->
+                                </div>
                             </div>
-                  
-                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
-                              <p class="guestbook-comment text-gray-700 italic">"Congra!"</p>
-                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Sha</p>
+                
+                            <div class="flex justify-center pt-5 pb-0">
+                                <button class="wish-btn bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full flex items-center gap-2" id="book">
+                                    <i class="fas fa-pen-nib"></i>
+                                    <span>Leave a Message</span>
+                                </button>
                             </div>
-                  
-                            <div class="guestbook-main bg-white shadow rounded-xl p-4">
-                              <p class="guestbook-comment text-gray-700 italic">"Selamat Pengantin Baru!"</p>
-                              <p class="guestbook-name text-right text-sm text-gray-500 mt-2">– Amir</p>
-                            </div>
-                          </div>
                         </div>
-                  
-                        <div class="flex justify-center pt-5 pb-0">
-                          <button class="wish-btn bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full flex items-center gap-2" id="book">
-                            <i class="fas fa-pen-nib"></i>
-                            <span>Leave a Message</span>
-                          </button>
-                        </div>
-                      </div>
                     </div>
-                  </section>
-                  
+                </section>
+                
+                <!-- Include the Fetch and Display Logic -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Fetch guestbook comments from the server
+                        fetch('get_guestbook.php')
+                            .then(response => response.json())
+                            .then(comments => {
+                                const guestbookContainer = document.getElementById('guestbook-comments');
+                                guestbookContainer.innerHTML = ''; // Clear existing comments
+                                comments.forEach(comment => {
+                                    const guestbookItem = document.createElement('div');
+                                    guestbookItem.classList.add('guestbook-main', 'bg-white', 'shadow', 'rounded-xl', 'p-4');
+                
+                                    const guestbookComment = document.createElement('p');
+                                    guestbookComment.classList.add('guestbook-comment', 'text-gray-700', 'italic');
+                                    guestbookComment.textContent = `"${comment.message}"`;
+                
+                                    const guestbookName = document.createElement('p');
+                                    guestbookName.classList.add('guestbook-name', 'text-right', 'text-sm', 'text-gray-500', 'mt-2');
+                                    guestbookName.textContent = `– ${comment.name}`;
+                
+                                    guestbookItem.appendChild(guestbookComment);
+                                    guestbookItem.appendChild(guestbookName);
+                                    guestbookContainer.appendChild(guestbookItem);
+                                });
+                            })
+                            .catch(error => console.error('Error fetching guestbook comments:', error));
+                    });
+                </script>
+                                  
 
     
         <svg version="1.0" class="pl-5 pr-5 w-full divider "><use href="#divider-1"></use></svg>      
