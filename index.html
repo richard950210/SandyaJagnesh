@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><head>
     <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/2cd73372/www-widgetapi.vflset/www-widgetapi.js" async="">
     </script>
@@ -116,7 +117,17 @@
             }
         </style>
     
-    <script async="" src="modules.f.js" charset="utf-8"></script></head>
+    <script async="" src="modules.f.js" charset="utf-8"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"> 
     <!-- Preloader -->
@@ -373,15 +384,15 @@
             <li class="contact-item">
                 <span class="name">Sandya</span>
                 <div class="number">
-                    <a href="tel:01163432496" target="_parent"><i class="fa fa-phone nav__icon"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=601163432496" target="_blank"><i class="fab fa-whatsapp nav__icon"></i></a>
+                    <a href="tel:0163164797" target="_parent"><i class="fa fa-phone nav__icon"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=60163164797" target="_blank"><i class="fab fa-whatsapp nav__icon"></i></a>
                 </div>
             </li>
             <li class="contact-item">
-                <span class="name">Jagnesh Jaya</span>
+                <span class="name">Jagnesh</span>
                 <div class="number">
-                    <a href="tel:0193812243" target="_parent"><i class="fa fa-phone nav__icon"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=60193812243" target="_blank"><i class="fab fa-whatsapp nav__icon"></i></a>
+                    <a href="tel:0164489554" target="_parent"><i class="fa fa-phone nav__icon"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=601164489554" target="_blank"><i class="fab fa-whatsapp nav__icon"></i></a>
                 </div>
             </li>    
                 
@@ -911,11 +922,6 @@
         
 
 
-
-
-
-
-
         <!--=============== COUNTDOWN ===============-->
         <div data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">
     <svg version="1.0" class="pl-5 pr-5 w-full divider"><use href="#divider-1"></use></svg>
@@ -989,26 +995,23 @@
 
         
         <!--=============== GALLERY ===============-->
-                    <section class="container section gallery aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <section class="container section gallery" data-aos="fade-up" data-aos-duration="1000">
             <div class="wrapper">
-                <h3 class="section-title">Gallery</h3>
-                <div class="gallery-content slick-initialized slick-slider slick-dotted">
-                    <button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;">
-                        Previous</button>
-                                <div class="slick-list draggable" style="height: 100px;">
-                                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);">
-                                        <img src="img/Background1.jpg" alt="" class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-                                        <img src="img/Background1.jpg" alt="" class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 0px;">
-                                        <img src="img/Background1.jpg" alt="" class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 0px;">
-                                    </div>
-                                </div>
-                                                
-                                                
-                            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false">Next</button><ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+              <h3 class="section-title">Gallery</h3>
+              <div class="gallery-content">
+                <img src="img/Background1.jpg" alt="Gallery Image 1">
+                <img src="img/Background2.jpg" alt="Gallery Image 2">
+                <img src="img/Background0.jpg" alt="Gallery Image 3">
+              </div>
             </div>
-        </section>
-        <svg version="1.0" class="pl-5 pr-5 w-full divider"><use href="#divider-1"></use></svg>        
-                
+          </section>
+          
+          <svg version="1.0" class="pl-5 pr-5 w-full divider">
+            <use href="#divider-1"></use>
+          </svg>
+
+       
+
                 <!--=============== GUESTBOOK ===============-->
     <section class="container section gallery aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             <div class="wrapper w-full">
@@ -1075,6 +1078,13 @@
 
 </div>
 
+
+
+
+
+
+
+
     <!-- jQuery -->
     <script src="jquery.min.js"></script>
 
@@ -1108,125 +1118,8 @@
             hidePreloader();
         });
 
-
-        // Removed slick slider initialization from document ready to move it to start button click handler
-
-        $('#watermark-bg,#secondary-bg').attr('style', `width: ${screen.width}px; max-width: 420px;`)
-
-        // Modified start button click handler to initialize slick slider after showing gallery
-        function startBtn(t){
-            startOverlayDiv[0].classList.add("animated");
-            startOverlayDiv[0].classList.add("slideOutUp");
-            setTimeout(() => {
-                startDiv[0].remove();
-                mainDiv[0].classList.remove("hidden");
-
-                // Initialize slick slider on gallery-content after it becomes visible
-                $('.gallery-content').slick({
-                    arrows: true,
-                    dots: true,
-                    infinite: false,
-                    speed: 300,
-                    adaptiveHeight: true
-                });
-
-                // Set slick slider position
-                $(".gallery-content").slick("setPosition");
-
-                if($("#particles-js").length) initParticles($("#particle_color").val());
-                if(document.getElementById("audio")) document.getElementById("audio").play();
-            }, 750);
-
-            if(localStorage.getItem("firstTime") != 1){
-                setTimeout(() => {
-                    tutorialDiv[0].classList.remove("hidden");
-                    tutorialDiv[0].classList.add("animated");
-                    tutorialDiv[0].classList.add("fadeIn");
-                }, 2500);
-                localStorage.setItem("firstTime", 1);
-            }
-    </script>
-
-
-
-<!--SCRIPT FOR MESSAGE-->
-<!--
-    <script>
-    $(function() {
-        var Toast2 = Swal.mixin({
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'YES',
-            cancelButtonText: 'NO'
-        });
-        $(document).on('click', '.confirmDelete2', function(event) {
-            var form =  $(this).closest("form");
-            event.preventDefault();
-            Toast2.fire({
-                text: "Anda pasti untuk padam kad ini?",
-                icon: 'warning'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                }
-            })
-        });
-        $(document).on('click', '.confirmCancel', function(event) {
-            var form =  $(this).closest("form");
-            event.preventDefault();
-            Toast2.fire({
-                text: "Anda pasti untuk batalkan tempahan ini?",
-                icon: 'warning'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                }
-            })
-        });
-        $(document).on('click', '.confirmDeleteRsvp', function(event) {
-            var form =  $(this).closest("form");
-            event.preventDefault();
-            Toast2.fire({
-                text: "Anda pasti untuk padam RSVP ini?",
-                icon: 'warning'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                }
-            })
-        });
-        $(document).on('click', '.confirmDeleteWishes', function(event) {
-            var form =  $(this).closest("form");
-            event.preventDefault();
-            Toast2.fire({
-                text: "Anda pasti untuk padam ucapan ini?",
-                icon: 'warning'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                }
-            })
-        });
-        $(document).on('click', '.confirmDeleteWishlist', function(event) {
-            var form =  $(this).closest("form");
-            event.preventDefault();
-            Toast2.fire({
-                text: "Anda pasti untuk padam item ini?",
-                icon: 'warning'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                }
-            })
-        });
-    });
 </script>
 
--->
-
-    <!-- particles.js -->
-    <script src="particles.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="main.min.js"></script>
@@ -1235,7 +1128,7 @@
     <script src="color.min.js"></script>
     
     <!-- Preloader Script -->
-    <script>
+ <script>    
     window.addEventListener('load', function() {
         setTimeout(function() {
             document.querySelector('.overlay.preload').style.opacity = '0';
@@ -1244,9 +1137,50 @@
             }, 400);
         }, 1000);
     });
-    </script>
 
-    
+// Gallery Carousel
+$('.gallery-content').not('.slick-initialized').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000
+});
+
+// Guestbook Carousel
+$('.guestbook-slider').not('.slick-initialized').slick({
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000
+});
+
+// Wishlist Modal Function
+function openWishlistModal(itemName) {
+    Swal.fire({
+        title: `Reserve ${itemName}?`,
+        text: "We will mark it as reserved for you!",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: "Yes, reserve it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Reserved!", `${itemName} has been reserved. Thank you!`, "success");
+        }
+    });
+}
+
+// Hide Preloader after load
+window.addEventListener('load', () => {
+    document.querySelector('.overlay.preload').style.display = 'none';
+});
+</script>
+
     
 
 
