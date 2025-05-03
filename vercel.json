@@ -1,8 +1,1 @@
-    {
-      "routes": [
-        {
-          "source": "/(.*)",
-          "destination": "/index.php"
-        }
-      ]
-    }
+    
