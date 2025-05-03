@@ -1,13 +1,3 @@
-<?php
-// Enable error reporting for debugging
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-// Include the connection file
-include('connect.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en"><head>
 
@@ -118,54 +108,11 @@ include('connect.php');
     
     <script async="" src="modules.f.js" charset="utf-8"></script>
 
-<!--
-    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/2cd73372/www-widgetapi.vflset/www-widgetapi.js" async="">
-    </script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-
-<script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3573114,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script><script async="" src="https://static.hotjar.com/c/hotjar-3573114.js?sv=6"></script>
--->
-
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 
 </head>
-<!--
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
--->
-
-
-<?php
-echo "PHP is working";
-?>
-
-<?php
-    // Example query to fetch data from the database
-    $sql = "SELECT * FROM my_table";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        // Output data of each row
-        while($row = $result->fetch_assoc()) {
-            echo "<p>" . $row['column_name'] . "</p>";
-        }
-    } else {
-        echo "0 results";
-    }
-    ?>
-
-
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"> 
     <!-- Preloader -->
